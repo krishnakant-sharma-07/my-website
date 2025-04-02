@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div style={{ minHeight: "80vh" }}>
+      <div className="min-h-screen flex flex-col items-center justify-center p-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
