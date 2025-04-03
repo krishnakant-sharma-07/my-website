@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav style={{ background: "#007bff", padding: "10px", color: "white" }}>
-      <h2>My Website</h2>
+    <nav className="bg-blue-600 text-white p-4 flex justify-between">
+      <h2 className="text-xl font-bold">My Website</h2>
       <div>
-        <Link to="/" style={{ color: "white", margin: "10px" }}>Home</Link>
-        <Link to="/about" style={{ color: "white", margin: "10px" }}>About</Link>
+        <Link to="/" className="mx-2 hover:underline">Home</Link>
+        <Link to="/about" className="mx-2 hover:underline">About</Link>
+        <Link to="/contact" className="mx-2 hover:underline">Contact</Link>
       </div>
     </nav>
   );
 }
-
+// this is the change to check development2
 export default Navbar;
