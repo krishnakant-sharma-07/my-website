@@ -9,16 +9,17 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+ <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900">
         <Navbar />
         <main className="flex-grow flex flex-col items-center justify-center p-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />  {/* Keeping the /contact route */}
           </Routes>
         </main>
-        <Footer />
+        <Footer />  {/* Keeping the footer */}
+      </div>
       </div>
     </Router>
   );
